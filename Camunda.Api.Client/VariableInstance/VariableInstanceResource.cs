@@ -5,8 +5,8 @@ namespace Camunda.Api.Client.VariableInstance
 {
     public class VariableInstanceResource
     {
-        private string _variableInstanceId;
-        private IVariableInstanceRestService _api;
+        private readonly string _variableInstanceId;
+        private readonly IVariableInstanceRestService _api;
 
         internal VariableInstanceResource(IVariableInstanceRestService api, string variableInstanceId)
         {

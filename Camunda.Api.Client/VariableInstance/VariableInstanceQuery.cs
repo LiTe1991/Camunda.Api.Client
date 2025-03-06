@@ -14,49 +14,65 @@ namespace Camunda.Api.Client.VariableInstance
         /// </summary>
         public string VariableNameLike;
         /// <summary>
-        /// An array to only include variable instances that have the certain values.
+        /// Only include variable instances which belong to one of the passed process instance ids.
         /// </summary>
-        public List<VariableQueryParameter> VariableValues;
+        [JsonProperty("processInstanceIdIn")]
+        public List<string> ProcessInstanceId = [];
         /// <summary>
         /// Only include variable instances which belong to one of the passed execution ids.
         /// </summary>
         [JsonProperty("executionIdIn")]
-        public List<string> ExecutionId = new List<string>();
-        /// <summary>
-        /// Only include variable instances which belong to one of the passed process instance ids.
-        /// </summary>
-        [JsonProperty("processInstanceIdIn")]
-        public List<string> ProcessInstanceId = new List<string>();
-        /// <summary>
-        /// Only include variable instances which belong to one of the passed case execution ids.
-        /// </summary>
-        [JsonProperty("caseExecutionIdIn")]
-        public List<string> CaseExecutionId = new List<string>();
+        public List<string> ExecutionId = [];
         /// <summary>
         /// Only include variable instances which belong to one of the passed case instance ids.
         /// </summary>
         [JsonProperty("caseInstanceIdIn")]
-        public List<string> CaseInstanceId = new List<string>();
+        public List<string> CaseInstanceId = [];
+        /// <summary>
+        /// Only include variable instances which belong to one of the passed case execution ids.
+        /// </summary>
+        [JsonProperty("caseExecutionIdIn")]
+        public List<string> CaseExecutionId = [];
         /// <summary>
         /// Only include variable instances which belong to one of the passed task ids.
         /// </summary>
         [JsonProperty("taskIdIn")]
-        public List<string> TaskId = new List<string>();
+        public List<string> TaskId = [];
         /// <summary>
-        /// Only select variables instances which have on of the variable scope ids.
+        /// Only include variable instances which belong to one of the passed and comma-separated batch ids.
         /// </summary>
-        [JsonProperty("variableScopeIdIn")]
-        public List<string> VariableScopeId = new List<string>();
+        [JsonProperty("batchIdIn")]
+        public List<string> BatchId = [];
         /// <summary>
         /// Only include variable instances which belong to one of the passed activity instance ids.
         /// </summary>
         [JsonProperty("activityInstanceIdIn")]
-        public List<string> ActivityInstanceId = new List<string>();
+        public List<string> ActivityInstanceId = [];
         /// <summary>
         /// Only select variable instances with one of the given tenant ids.
         /// </summary>
         [JsonProperty("tenantIdIn")]
-        public List<string> TenantIds = new List<string>();
+        public List<string> TenantIds = [];
+        /// <summary>
+        /// An array to only include variable instances that have the certain values.
+        /// </summary>
+        public List<VariableQueryParameter> VariableValues;
+        /// <summary>
+        /// Match the variable name provided in taskVariables and processVariables case-insensitively. If set to true variableName and variablename are treated as equal.
+        /// </summary>
+        [JsonProperty("variableNamesIgnoreCase")]
+        public bool? VariableNamesIgnoreCase;
+
+        /// <summary>
+        /// Match the variable value provided in taskVariables and processVariables case-insensitively. If set to true variableValue and variablevalue are treated as equal.
+        /// </summary>
+        [JsonProperty("variableValuesIgnoreCase")]
+        public bool? VariableValuesIgnoreCase;
+        /// <summary>
+        /// Only select variables instances which have on of the variable scope ids.
+        /// </summary>
+        [JsonProperty("variableScopeIdIn")]
+        public List<string> VariableScopeId = [];
     }
 
     public enum VariableInstanceSorting

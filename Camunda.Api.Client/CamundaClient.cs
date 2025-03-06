@@ -321,7 +321,7 @@ namespace Camunda.Api.Client
         /// <see href="https://docs.camunda.org/manual/7.9/reference/rest/user/"/>
         public UserTaskService UserTasks => new UserTaskService(_userTaskApi.Value);
 
-        /// <see href="https://docs.camunda.org/manual/7.9/reference/rest/variable-instance/"/>
+        /// <see href="https://docs.camunda.org/rest/camunda-bpm-platform/7.22/#tag/Variable-Instance"/>
         public VariableInstanceService VariableInstances => new VariableInstanceService(_variableInstanceApi.Value);
 
         /// <see href="https://docs.camunda.org/manual/7.9/reference/rest/filter/"/>

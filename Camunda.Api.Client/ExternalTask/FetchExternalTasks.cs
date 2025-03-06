@@ -28,5 +28,12 @@ namespace Camunda.Api.Client.ExternalTask
         /// Array of topic objects for which external tasks should be fetched. The returned tasks may be arbitrarily distributed among these topics.
         /// </summary>
         public List<FetchExternalTaskTopic> Topics;
+
+        public List<SortingInfo<FetchExternalTasksSorting>> Sorting;
+    }
+    
+    public enum FetchExternalTasksSorting
+    {
+        CreateTime
     }
 }

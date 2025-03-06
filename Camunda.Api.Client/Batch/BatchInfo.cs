@@ -1,4 +1,6 @@
-﻿namespace Camunda.Api.Client.Batch
+﻿using System;
+
+namespace Camunda.Api.Client.Batch
 {
     public class BatchInfo
     {
@@ -33,6 +35,10 @@
         /// </summary>
         public string SeedJobDefinitionId;
         /// <summary>
+        /// The job definition id for the monitor jobs of this batch.
+        /// </summary>
+        public string MonitorJobDefinitionId;
+        /// <summary>
         /// The job definition id for the batch execution jobs of this batch.
         /// </summary>
         public string BatchJobDefinitionId;
@@ -48,5 +54,13 @@
         /// The id of the user that created the batch.
         /// </summary>
         public string CreateUserId;
+        /// <summary>
+        /// The time the batch was started. Default format yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+        /// </summary>
+        public DateTimeOffset StartTime;
+        /// <summary>
+        /// The time the batch execution was started, i.e., at least one batch job has been executed. Default format yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+        /// </summary>
+        public DateTimeOffset ExecutionStartTime;
     }
 }

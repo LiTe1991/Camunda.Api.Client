@@ -17,6 +17,6 @@
         <RepositoryBranch>main</RepositoryBranch>
         <RepositoryCommit>d4eac37457125da3d6681145c89830b646f5d374</RepositoryCommit>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <Version>1.0.1</Version>
+        <Version>3.0.1</Version>
     </PropertyGroup>
 </Project>

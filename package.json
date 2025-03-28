@@ -1,6 +1,6 @@
 {
   "name": "Camunda.Api.Client",
-  "version": "1.0.1",
+  "version": "3.0.0",
   "devDependencies": {
     "@droidsolutions-oss/semantic-release-nuget": "^2.0.1",
     "@droidsolutions-oss/semantic-release-update-file": "^1.4.0",

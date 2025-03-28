@@ -15,8 +15,8 @@
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>
-        <RepositoryCommit></RepositoryCommit>
+        <RepositoryCommit>55b4cad6ec68afdd15b462cc3e1643b1a08f9ab1</RepositoryCommit>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <Version>3.0.0</Version>
+        <Version>1.0.0</Version>
     </PropertyGroup>
 </Project>

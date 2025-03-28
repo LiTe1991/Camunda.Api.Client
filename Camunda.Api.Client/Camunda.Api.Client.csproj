@@ -1,14 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <NoWarn>1701;1702;1705;1591</NoWarn>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <!-- Don't increment AssemblyVersion -->
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Key.snk</AssemblyOriginatorKeyFile>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
@@ -23,11 +17,4 @@
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
     <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
-
-  
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <!-- wait for manually signing to complete -->
-    <Exec Condition="$(SIGNTOOL_WAIT) != ''" Command="start cmd /c pause" />
-  </Target>
-
 </Project>

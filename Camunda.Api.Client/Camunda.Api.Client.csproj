@@ -2,20 +2,7 @@
 
   <PropertyGroup>
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
-    <VersionSuffix></VersionSuffix>
-    <VersionPrefix>2.6.0</VersionPrefix>
-    <FileVersion>2.6.0.0</FileVersion>
-    <Product>Camunda REST API Client</Product>
-    <Title>Camunda REST API Client</Title>
-    <Authors>Jan Lucansky</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/jlucansky/Camunda.Api.Client</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
-    <Description>Camunda REST API Client for .NET platform</Description>
-    <PackageTags>camunda rest refit bpmn bpm</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
-    <RepositoryType></RepositoryType>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <NoWarn>1701;1702;1705;1591</NoWarn>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <!-- Don't increment AssemblyVersion -->
@@ -23,7 +10,6 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Key.snk</AssemblyOriginatorKeyFile>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>default</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

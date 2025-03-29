@@ -4,7 +4,6 @@
     </PropertyGroup>
     <PropertyGroup>
         <Authors>Jan Lucansky</Authors>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/LiTe1991/Camunda.Api.Client</PackageProjectUrl>
         <PackageReleaseNotes>https://github.com/LiTe1991/Camunda.Api.Client/blob/main/CHANGELOG.md</PackageReleaseNotes>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -12,7 +11,6 @@
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>
         <RepositoryCommit>f5f9f3953eeabcf438380a5c7c27074fe0887a7e</RepositoryCommit>
-        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Version>1.0.2</Version>
     </PropertyGroup>
 </Project>

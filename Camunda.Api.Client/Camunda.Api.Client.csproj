@@ -1,11 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <NoWarn>1701;1702;1705;1591</NoWarn>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <!--Nupkg properties-->
+    <PackageId>lite.Camunda.Api.Client</PackageId>
+    <Product>Camunda REST API Client</Product>
+    <Title>Camunda REST API Client</Title>
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>Camunda REST API Client for .NET platform</Description>
+    <PackageTags>camunda rest refit bpmn bpm</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Refit" Version="8.0.0" />

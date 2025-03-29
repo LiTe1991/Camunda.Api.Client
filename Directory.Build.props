@@ -3,15 +3,11 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup>
-        <Product>Camunda REST API Client</Product>
-        <Title>Camunda REST API Client</Title>
         <Authors>Jan Lucansky</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/LiTe1991/Camunda.Api.Client</PackageProjectUrl>
         <PackageReleaseNotes>https://github.com/LiTe1991/Camunda.Api.Client/blob/main/CHANGELOG.md</PackageReleaseNotes>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <PackageIcon>icon.png</PackageIcon>
-        <Description>Camunda REST API Client for .NET platform</Description>
-        <PackageTags>camunda rest refit bpmn bpm</PackageTags>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>

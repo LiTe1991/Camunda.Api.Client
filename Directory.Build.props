@@ -10,7 +10,7 @@
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>
-        <RepositoryCommit>f5f9f3953eeabcf438380a5c7c27074fe0887a7e</RepositoryCommit>
-        <Version>1.0.2</Version>
+        <RepositoryCommit>786f6986c744afaef9b0f74cd18743dd6186416f</RepositoryCommit>
+        <Version>1.0.0</Version>
     </PropertyGroup>
 </Project>
